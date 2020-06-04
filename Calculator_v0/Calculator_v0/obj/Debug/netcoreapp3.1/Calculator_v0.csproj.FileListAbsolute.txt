@@ -1,0 +1,13 @@
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\bin\Debug\netcoreapp3.1\Calculator_v0.exe
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\bin\Debug\netcoreapp3.1\Calculator_v0.deps.json
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\bin\Debug\netcoreapp3.1\Calculator_v0.runtimeconfig.json
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\bin\Debug\netcoreapp3.1\Calculator_v0.runtimeconfig.dev.json
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\bin\Debug\netcoreapp3.1\Calculator_v0.dll
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\bin\Debug\netcoreapp3.1\Calculator_v0.pdb
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\obj\Debug\netcoreapp3.1\Calculator_v0.csprojAssemblyReference.cache
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\obj\Debug\netcoreapp3.1\Calculator_v0.AssemblyInfoInputs.cache
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\obj\Debug\netcoreapp3.1\Calculator_v0.AssemblyInfo.cs
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\obj\Debug\netcoreapp3.1\Calculator_v0.csproj.CoreCompileInputs.cache
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\obj\Debug\netcoreapp3.1\Calculator_v0.dll
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\obj\Debug\netcoreapp3.1\Calculator_v0.pdb
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Calculator_v0\Calculator_v0\obj\Debug\netcoreapp3.1\Calculator_v0.genruntimeconfig.cache
