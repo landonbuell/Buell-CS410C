@@ -1,0 +1,13 @@
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\bin\Debug\netcoreapp3.1\Program0.exe
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\bin\Debug\netcoreapp3.1\Program0.deps.json
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\bin\Debug\netcoreapp3.1\Program0.runtimeconfig.json
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\bin\Debug\netcoreapp3.1\Program0.runtimeconfig.dev.json
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\bin\Debug\netcoreapp3.1\Program0.dll
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\bin\Debug\netcoreapp3.1\Program0.pdb
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\obj\Debug\netcoreapp3.1\Program0.csprojAssemblyReference.cache
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\obj\Debug\netcoreapp3.1\Program0.AssemblyInfoInputs.cache
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\obj\Debug\netcoreapp3.1\Program0.AssemblyInfo.cs
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\obj\Debug\netcoreapp3.1\Program0.csproj.CoreCompileInputs.cache
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\obj\Debug\netcoreapp3.1\Program0.dll
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\obj\Debug\netcoreapp3.1\Program0.pdb
+C:\Users\Landon\Documents\GitHub\Buell-CS410C\Program0\obj\Debug\netcoreapp3.1\Program0.genruntimeconfig.cache
