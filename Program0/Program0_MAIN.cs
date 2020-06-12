@@ -79,9 +79,11 @@ namespace Program0
         {
             // Compute Cantrell formula Approximation of Ellipse Circumfrence
             double s = 0.825056;
-            double nmtr = 4 * (this.a + this.b) - 2 * (4 - Math.PI) * this.a * this.b;
-            double dmtr = Math.Pow(this.a, s)/2 + Math.Pow(this.b, s)/2;
-            double crfm = nmtr / Math.Pow(dmtr, 1/s);
+            var n = (4 * (this.a + this.b)) - (2 * (4 - Math.PI));
+            double nmtr = n * (this.a * this.b);
+            var _ = Math.Pow(this.a, s)/2 + Math.Pow(this.b, s)/2;
+            double dmtr = Math.Pow( _ , (1 / s));
+            double crfm = nmtr / dmtr;
             Console.WriteLine("\tCantrell Formula - {0}", crfm);
             return crfm;
         }
