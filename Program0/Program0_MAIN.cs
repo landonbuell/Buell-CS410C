@@ -6,13 +6,12 @@
  */
 
 using System;
-using System.Runtime.CompilerServices;
 
 namespace Program0
 {
     public class Ellipse
     {
-        // Declare pi as double, set major and minor axes as attribute
+        // Set major and minor axes as attribute as FP64
         public double a;
         public double b;
         public double area;
@@ -103,12 +102,12 @@ namespace Program0
 
                 // Create Class Instance & Run Approximations
                 var my_Ellipse = new Ellipse(A, B);
-                _ = my_Ellipse.Ramanujan1();
-                _ = my_Ellipse.Ramanujan2();
-                _ = my_Ellipse.Muir();
-                _ = my_Ellipse.Hudson();
-                _ = my_Ellipse.Holder_Mean();
-                _ = my_Ellipse.Cantrell();
+                my_Ellipse.Ramanujan1();
+                my_Ellipse.Ramanujan2();
+                my_Ellipse.Muir();
+                my_Ellipse.Hudson();
+                my_Ellipse.Holder_Mean();
+                my_Ellipse.Cantrell();
             }
         }
     }
