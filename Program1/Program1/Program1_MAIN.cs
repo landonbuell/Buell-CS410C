@@ -7,7 +7,9 @@
 
 
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Data.SqlTypes;
+using System.Linq;
 
 namespace Program1
 {
@@ -15,15 +17,14 @@ namespace Program1
     class Point_Pair
     {
         // Initialize attribute of 2 points
-        double [] O;
-        double [] P;
-        double[] Q;
+        public double [] P;
+        public double [] Q;
 
         public Point_Pair (double [] pt1 , double[] pt2)
         {
             // Initialize Object Instance by assigning points
-            this.P = pt1;
-            this.Q = pt2;
+            P = pt1;
+            Q = pt2;
         }
 
         public double Distance ()
@@ -38,8 +39,8 @@ namespace Program1
         public double Bearing_Angle()
         {
             // Compute bearing angle from P to Q
-            double dx = this.P[0] - Q[0];
-            double dy = this.P[1] - Q[1];
+            double dx = P[0] - Q[0];
+            double dy = P[1] - Q[1];
             double bearing = Math.Atan2(dx, dy);
             return bearing;
         }
@@ -72,6 +73,46 @@ namespace Program1
         }
     }
 
+
+    class OutputTable
+    {
+        // Assign Points to Instance
+        public double[] P;
+        public double[] Q;
+
+        public OutputTable(double[] pt1, double[] pt2)
+        {
+            // Initialize Object Instance by assigning points
+            P = pt1;
+            Q = pt2;
+        }
+
+        public void Header()
+        {
+            // Print Header for Tabel
+            Console.Write("Points Are: ");
+            Console.Write("( x1 , y1 ) = ");
+            Console.Write("( {0} , {1} )", P[0], P[1]);
+            Console.Write("\tand\t");
+            Console.Write("( x2 , y2 ) = ");
+            Console.Write("( {0} , {1} )", Q[0], Q[1]);
+            Console.WriteLine('\n');
+        }
+
+        public void Hline()
+        {
+            // Print horizontal lines
+            string dashes = string.Concat(Enumerable.Repeat("-",32));
+            for (int i = 0; i < 2; i++)
+            {
+                Console.Write("+");
+                Console.Write(dashes);
+            }
+            Console.Write("+", dashes);
+
+        }
+    }
+
     class Program1_MAIN
     {
         static void Main()
@@ -92,8 +133,18 @@ namespace Program1
             }
 
 
-            // Create instance
+            // Create instance & Run Computations for Table 1
             var Point_System = new Point_Pair(point1,point2);
+            double dr_mtr = Point_System.Distance();
+            double ds_rad = Point_System.Bearing_Angle();
+            double da_rad = Point_System.Sweep_Angle();
+
+
+            // Print Tables
+            var Table = new OutputTable(point1, point2);
+            Table.Header();
+            Table.Hline();
+            
             
               
         }
