@@ -7,9 +7,6 @@
 
 
 using System;
-using System.ComponentModel.DataAnnotations;
-using System.Data.SqlTypes;
-using System.Linq;
 
 namespace Program1
 {
