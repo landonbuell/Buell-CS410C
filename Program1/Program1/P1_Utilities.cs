@@ -31,7 +31,7 @@ namespace Program1
             // Compute bearing angle from P to Q
             double dx = P[0] - Q[0];
             double dy = P[1] - Q[1];
-            double bearing = Math.Atan2(dx, dy);
+            double bearing = Math.Atan2(dy, dx);
             return bearing;
         }
 
@@ -50,15 +50,15 @@ namespace Program1
     {
         public double rad_to_deg(double rad)
         {
-            // convert argument 'rad' to units of degrees
+            // Convert argument 'rad' to units of degrees
             double deg = rad * (180 / Math.PI);
             return deg;
         }
 
-        public double mtr_to_ft(double mtr)
+        public double mtr_to_ft (double mtr)
         {
-            // Convert argument 'mtr' into units of feet
-            double ft = mtr * 3.281;
+            // Convert argument 'mtr' to units of feet
+            double ft = mtr * 3.28084;
             return ft;
         }
     }
@@ -67,14 +67,26 @@ namespace Program1
     class OutputTable
     {
         // Assign Points to Instance
-        public double[] P;
-        public double[] Q;
+        public double [] P;
+        public double [] Q;
 
         public OutputTable(double[] pt1, double[] pt2)
         {
             // Initialize Object Instance by assigning points
             P = pt1;
             Q = pt2;
+        }
+
+        public void Hline()
+        {
+            // Print horizontal lines
+            string dashes = string.Concat(Enumerable.Repeat("-", 24));
+            for (int i = 0; i < 3; i++)
+            {
+                Console.Write("+");
+                Console.Write(dashes);
+            }
+            Console.WriteLine("+", dashes);
         }
 
         public void Title()
@@ -89,21 +101,15 @@ namespace Program1
             Console.WriteLine(' ');
         }
 
-        public void Hline()
+        public void Subtable (string [] hdrs , double [] body)
         {
-            // Print horizontal lines
-            string dashes = string.Concat(Enumerable.Repeat("-", 32));
-            for (int i = 0; i < 2; i++)
-            {
-                Console.Write("+");
-                Console.Write(dashes);
-            }
-            Console.Write("+", dashes);
-        }
-
-        public void Headers()
-        {
-
+            // Print Substable Header & Body
+            Hline();
+            Console.WriteLine("|{0,24}|{1,24}|{2,24}|", hdrs[0],hdrs[1],hdrs[2]);
+            Hline();
+            Console.WriteLine("|{0,24}|{1,24}|{2,24}|", body[0], body[1], body[2]);
+            Hline();
+            Console.WriteLine(' ');
         }
     }
 

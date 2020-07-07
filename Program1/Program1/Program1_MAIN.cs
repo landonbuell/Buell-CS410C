@@ -33,19 +33,41 @@ namespace Program1
 
             // Create instance & Run Computations for Table 1
             var Point_System = new Point_Pair(point1,point2);
-            double dr_mtr = Point_System.Distance();
-            double ds_rad = Point_System.Bearing_Angle();
-            double da_rad = Point_System.Sweep_Angle();
+            double distance_mtrs = Point_System.Distance();
+            double bearing_rad = Point_System.Bearing_Angle();
+            double sweep_rad = Point_System.Sweep_Angle();
 
+            // Create Conversion Instance
+            var Converter = new Conversions();
+            double distance_ft = Converter.mtr_to_ft(distance_mtrs);
+            double bearing_deg = Converter.rad_to_deg(bearing_rad);
+            double sweep_deg = Converter.rad_to_deg(sweep_rad);
 
-            // Print Tables
+            // Initalize Table and Title   
             var Table = new OutputTable(point1, point2);
             Table.Title();
-            Table.Hline();
-            
-            
 
-              
+            // First Sub-Table
+            string[] row1 = { "Distance (meters)", "Bearing (Rad)", "Sweep (Rad)" };
+            double[] body1 = { distance_mtrs, bearing_rad, sweep_rad };
+            Table.Subtable(row1, body1);
+
+            // Second Sub-Table
+            string[] row2 = { "Distance (meters)", "Bearing (Deg)", "Sweep (Deg)" };
+            double[] body2 = { distance_mtrs, bearing_deg, sweep_deg };
+            Table.Subtable(row2, body2);
+
+            // Third Sub-Table
+            string[] row3 = { "Distance (ft)", "Bearing (rad)", "Sweep (rad)" };
+            double[] body3 = { distance_ft, bearing_rad, sweep_rad };
+            Table.Subtable(row3, body3);
+
+
+
+
+
+
+
         }
     }
 }

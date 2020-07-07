@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "b9+k4evv7CJ1KM8sLN0TxFTJp+2TrtHNNIMjKEW7Iady0jas+E5Ke4Nc8X0LppXdV+xysS04ToLzyKJ/4hz1Tw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Landon\\Documents\\GitHub\\Buell-CS410C\\Program2\\Program2\\Program2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Landon\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
