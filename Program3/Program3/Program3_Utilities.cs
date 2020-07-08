@@ -21,14 +21,17 @@ namespace Program3
             this.value = user_input;
         }
 
-        public List RunFibbonacci()
+        public List<int> RunFibbonacci()
         {
-
+            int N = 0;
+            while (N <= this.value) ;
+            int new_num = Fibbonacci(N);
+            Fib_nums.Add(new_num);
+            return Fib_nums;
         }
-
         public int Fibbonacci (int N)
         {
-               
+            // Compute Fibbonacci Number
             if (N == 0) { return 0; }
             else if (N == 1) { return 1; }
             else { return Fibbonacci(N - 1) + Fibbonacci(N + 1); }

@@ -35,7 +35,11 @@ namespace Program3
                     {
                         // Create Object and Run tests
                         var sequences = new MathSequences(input);
+
+                        var Fibbonacci_Numbers = sequences.RunFibbonacci();
+                        Console.WriteLine(Fibbonacci_Numbers);
                     }
+
                 }
                 catch
                 {
