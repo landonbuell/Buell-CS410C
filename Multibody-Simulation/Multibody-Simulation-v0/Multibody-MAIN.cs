@@ -25,6 +25,9 @@ namespace Multibody_Simulation_v0
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
             Constants.G = 6.67e-11f;
+
+            
+
         }
     }
 }

@@ -20,10 +20,18 @@ namespace Multibody_Simulation_v0
 
     }
 
-    class System
+    class Multibody_System
     {
         // System Class Holds a list of all
         // Body objects in the current system
+
+        public Multibody_System()
+        {
+            List <Body> Bodies = new List<Body>();
+        }
+        
+
+
     }
     
 
@@ -59,14 +67,6 @@ namespace Multibody_Simulation_v0
             this.d2z = 0;
         }
 
-        public float[] computeAcceleration(Body other)
-        {
-            // Compute accleration
-            
-
-
-            
-        }
-
+ 
     }
 }
