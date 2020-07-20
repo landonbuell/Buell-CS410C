@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Multibody_Simulation_v0
+namespace WindowsFormsApp1
 {
     public partial class FormMain : Form
     {
         public FormMain()
         {
             InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hideSubMenus()
+        {
+
         }
     }
 }
