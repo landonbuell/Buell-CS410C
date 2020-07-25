@@ -13,32 +13,24 @@ namespace Program3
     {
         static void Main()
         {
+
             while (true)
             {
                 // Accept User Input
-                Console.Write("Please Input and integer between 1 and 1000:");
+                Console.Write("Please Input and integer between 1 and 1000:\t");
                 try
                 {
                     int input = Convert.ToInt32(Console.ReadLine());
+                    if (UserInput.ValidInput(input) == true)
+                    {
+                        // Create Math Object and Run Tests
+                        MathSequences Maths = new MathSequences(input);
 
-                    // Test User Input:
-                    if (input < 1 ^ input > 1000)
-                    {
-                        Console.WriteLine("\n\tERROR! - Integer out of range, Please try again\n");
+                        Maths.Fibbonacci_Numbers();
+                        Maths.Prime_Numbers();
+                        Maths.Collatz_Numbers();
                     }
-                    else if (input == 1000)
-                    {
-                        // Terminate program if input is 1000
-                        break;
-                    }
-                    else
-                    {
-                        // Create Object and Run tests
-                        var sequences = new MathSequences(input);
-
-                        var Fibbonacci_Numbers = sequences.RunFibbonacci();
-                        Console.WriteLine(Fibbonacci_Numbers);
-                    }
+                        
 
                 }
                 catch

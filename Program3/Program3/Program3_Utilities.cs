@@ -10,31 +10,106 @@ using System.Collections.Generic;
 
 namespace Program3
 {
+
+    class UserInput
+    {
+
+        public static bool ValidInput(int userinput)
+        {
+            if (userinput < 1 ^ userinput > 1000)
+            {
+                Console.WriteLine("\n\tERROR! - Integer out of range, Please try again\n");
+                return false;
+            }
+            else if (userinput == 1000)
+            {
+                Console.WriteLine("\n\tTerminating Program...");
+                Environment.Exit(0);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+    }
+
     class MathSequences
     {
         public int value;
-        public List<int> Fib_nums;
+        public List<int> Fibbonacci;
+        public List<int> Primes;
+        public List<int> Collatz;
 
-        public MathSequences(int user_input)
+        public MathSequences(int inputvalue)
         {
             // Class Constructor
-            this.value = user_input;
+            value = inputvalue;
+            Fibbonacci = new List<int>();
+            Primes = new List<int>();
+            Collatz = new List<int>();
+
         }
 
-        public List<int> RunFibbonacci()
+        public void Fibbonacci_Numbers ()
         {
-            int N = 0;
-            while (N <= this.value) ;
-            int new_num = Fibbonacci(N);
-            Fib_nums.Add(new_num);
-            return Fib_nums;
+            // Compute Fibbonacci Sequence up to 'Value'
+            int a = 0, b = 1, c = a+b;
+            Fibbonacci.Add(a);
+            Fibbonacci.Add(b);
+            while (c <= value) 
+            {
+                c = a + b;
+                Fibbonacci.Add(c);
+                a = b;
+                b = c;
+            }
+            Fibbonacci.RemoveAt(Fibbonacci.Count - 1);
+            PrintValues("Fibbonacci Sequnece",Fibbonacci);
         }
-        public int Fibbonacci (int N)
+
+        public void Prime_Numbers()
         {
-            // Compute Fibbonacci Number
-            if (N == 0) { return 0; }
-            else if (N == 1) { return 1; }
-            else { return Fibbonacci(N - 1) + Fibbonacci(N + 1); }
+            // Find all Prime Factors of 'Value'
+            int sqrtval = Convert.ToInt32(Math.Ceiling(Math.Sqrt(value)));
+            for (int i = 1 ; i <= sqrtval; i++)
+            {
+                if (value % i == 0)
+                {
+                    
+                }              
+            }
+            PrintValues("Prime Factos", Primes);
+        }
+        
+        public void Collatz_Numbers()
+        {
+            // Compute Collatz Conjecture starting at 'Value'
+            int n = value;
+            Collatz.Add(n);
+            while (true)
+            {
+                if (n == 1)
+                    break;
+                if (n % 2 == 0)
+                    n /= 2;
+                else
+                    n = 3 * n + 1;
+                Collatz.Add(n);
+                //Console.WriteLine(n);
+            }
+            PrintValues("Collatz Conjecture", Collatz);
+        }
+
+        public void PrintValues (string text,List<int> vals)
+        {
+            Console.WriteLine("{0} for {1}",text,value);
+            foreach (int i in vals)
+            {
+                Console.Write(i);
+                Console.Write(" -> ");
+            }
+            Console.WriteLine("\nContaining {0} elements\n", vals.Count);
         }
 
     }
