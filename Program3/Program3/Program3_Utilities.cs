@@ -70,16 +70,11 @@ namespace Program3
 
         public void Prime_Numbers()
         {
-            // Find all Prime Factors of 'Value'
-            int sqrtval = Convert.ToInt32(Math.Ceiling(Math.Sqrt(value)));
-            for (int i = 1 ; i <= sqrtval; i++)
-            {
-                if (value % i == 0)
-                {
-                    
-                }              
-            }
-            PrintValues("Prime Factos", Primes);
+            // Find Primes up to 'value'
+            
+
+
+            PrintValues("Prime Factors", Primes);
         }
         
         public void Collatz_Numbers()
