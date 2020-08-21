@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "n49v+ZV76pkDAGi4IZIKU26ejYjyXj++SdUKYFShaRRDNjg2+75a1tlKl3Dx3zXm01ASqX7ZtPqFuoVSm887hQ==",
+  "dgSpecHash": "ZbHLF60AJyTUcKtfWOfM5HeEqCgiqtZ6rWZjBL7m3amd7OqOiKJXsv7Y2tP8Monbp3q8ItHNe0tc4E7SWIXvaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Landon\\Documents\\GitHub\\Buell-CS410C\\Program4\\Program4\\Program4.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Landon\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }

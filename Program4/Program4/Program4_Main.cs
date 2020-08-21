@@ -8,10 +8,14 @@ namespace Program4
         static void Main()
         {
             // Accept & Test User Input
-            List<int> inputList = InputValidator.Call();
+            List<int> InputList = InputValidator.Call();
 
             // Execution
-            Printing.RepeatString("-");
+            TrigFunctions Trigonometry = new TrigFunctions(InputList);
+            Trigonometry.Call();
+
+            // Print Table
+            Printing.PrintTable(Trigonometry);
         }
     }
 }
